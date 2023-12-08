@@ -1,11 +1,7 @@
-// Iteration 5: Store the player score and display it on the game over screen
-let score = localStorage.getItem("score")
-console.log(score)
-
-var scoreBoard = document.getElementById("scoreBoard")
-var playAgainButton = document.getElementById("play-again-button")
-
-scoreBoard.innerHTML = score;
-playAgainButton.onclick = (Event) =>{
-    location.href = "./game.html"
-}
+// Iteration 1: Make the Play button functional.
+// Description: When the Play button is clicked the game page should be displayed.
+const playbtn=document.getElementById("play-again-button");
+// playbtn.onclick=()=>{
+//     location.href="gameover.html"
+// }
+playbtn.addEventListener("click",e=>{location.href="game.html"})
